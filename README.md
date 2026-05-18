@@ -1,16 +1,34 @@
-# React + Vite
+# wifi-spot 📍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+공공 주차장 데이터를 카카오맵 위에 표시해주는 앱입니다.
 
-Currently, two official plugins are available:
+## 📌 프로젝트 소개
+장소 검색 / 지도 마커 표시 / 즐겨찾기 기능을 제공하며
+localStorage로 즐겨찾기를 저장합니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ 주요 기능
+- 카카오맵 마커 표시 및 인포윈도우
+- 키워드 실시간 검색 및 필터링
+- 즐겨찾기 추가 / 제거 / 토글
+- localStorage 즐겨찾기 영구 저장
+- Context API 전역 상태 관리
 
-## React Compiler
+## 🛠 사용 기술
+- React (useState, useEffect, useRef, useMemo, useCallback)
+- React Router DOM
+- Kakao Maps API
+- Tailwind CSS
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 실행 방법
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## 🔑 환경 변수 설정
+프로젝트 루트에 `.env` 파일 생성 후 아래 내용 추가
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+VITE_KAKAO_MAP_KEY=발급받은_API_KEY
+```
