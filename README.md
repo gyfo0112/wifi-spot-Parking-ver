@@ -1,4 +1,4 @@
-# wifi-spot 📍
+# wifi-spot(Parking-ver) 📍
 
 공공 주차장 데이터를 카카오맵 위에 표시해주는 앱입니다.
 
